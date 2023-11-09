@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"q4\startup_stm32f070xb.o"
+"q4\main.o"
+"q4\stm32f0xx_it.o"
+"q4\stm32f0xx_hal_msp.o"
+"q4\stm32f0xx_hal_tim.o"
+"q4\stm32f0xx_hal_tim_ex.o"
+"q4\stm32f0xx_hal_rcc.o"
+"q4\stm32f0xx_hal_rcc_ex.o"
+"q4\stm32f0xx_hal.o"
+"q4\stm32f0xx_hal_i2c.o"
+"q4\stm32f0xx_hal_i2c_ex.o"
+"q4\stm32f0xx_hal_gpio.o"
+"q4\stm32f0xx_hal_dma.o"
+"q4\stm32f0xx_hal_cortex.o"
+"q4\stm32f0xx_hal_pwr.o"
+"q4\stm32f0xx_hal_pwr_ex.o"
+"q4\stm32f0xx_hal_flash.o"
+"q4\stm32f0xx_hal_flash_ex.o"
+"q4\stm32f0xx_hal_exti.o"
+"q4\system_stm32f0xx.o"
+--strict --scatter "q4\q4.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "q4.map" -o q4\q4.axf

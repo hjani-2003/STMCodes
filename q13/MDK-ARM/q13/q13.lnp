@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+"q13\startup_stm32f070xb.o"
+"q13\main.o"
+"q13\stm32f0xx_it.o"
+"q13\stm32f0xx_hal_msp.o"
+"q13\stm32f0xx_hal_tim.o"
+"q13\stm32f0xx_hal_tim_ex.o"
+"q13\stm32f0xx_hal_uart.o"
+"q13\stm32f0xx_hal_uart_ex.o"
+"q13\stm32f0xx_hal_rcc.o"
+"q13\stm32f0xx_hal_rcc_ex.o"
+"q13\stm32f0xx_hal.o"
+"q13\stm32f0xx_hal_i2c.o"
+"q13\stm32f0xx_hal_i2c_ex.o"
+"q13\stm32f0xx_hal_gpio.o"
+"q13\stm32f0xx_hal_dma.o"
+"q13\stm32f0xx_hal_cortex.o"
+"q13\stm32f0xx_hal_pwr.o"
+"q13\stm32f0xx_hal_pwr_ex.o"
+"q13\stm32f0xx_hal_flash.o"
+"q13\stm32f0xx_hal_flash_ex.o"
+"q13\stm32f0xx_hal_exti.o"
+"q13\system_stm32f0xx.o"
+--strict --scatter "q13\q13.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "q13.map" -o q13\q13.axf
