@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"q28\startup_stm32f070xb.o"
+"q28\main.o"
+"q28\stm32f0xx_it.o"
+"q28\stm32f0xx_hal_msp.o"
+"q28\stm32f0xx_hal_tim.o"
+"q28\stm32f0xx_hal_tim_ex.o"
+"q28\stm32f0xx_hal_rcc.o"
+"q28\stm32f0xx_hal_rcc_ex.o"
+"q28\stm32f0xx_hal.o"
+"q28\stm32f0xx_hal_i2c.o"
+"q28\stm32f0xx_hal_i2c_ex.o"
+"q28\stm32f0xx_hal_gpio.o"
+"q28\stm32f0xx_hal_dma.o"
+"q28\stm32f0xx_hal_cortex.o"
+"q28\stm32f0xx_hal_pwr.o"
+"q28\stm32f0xx_hal_pwr_ex.o"
+"q28\stm32f0xx_hal_flash.o"
+"q28\stm32f0xx_hal_flash_ex.o"
+"q28\stm32f0xx_hal_exti.o"
+"q28\system_stm32f0xx.o"
+--strict --scatter "q28\q28.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "q28.map" -o q28\q28.axf
