@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+"q30\startup_stm32f070xb.o"
+"q30\main.o"
+"q30\stm32f0xx_it.o"
+"q30\stm32f0xx_hal_msp.o"
+"q30\stm32f0xx_hal_tim.o"
+"q30\stm32f0xx_hal_tim_ex.o"
+"q30\stm32f0xx_hal_rcc.o"
+"q30\stm32f0xx_hal_rcc_ex.o"
+"q30\stm32f0xx_hal.o"
+"q30\stm32f0xx_hal_i2c.o"
+"q30\stm32f0xx_hal_i2c_ex.o"
+"q30\stm32f0xx_hal_gpio.o"
+"q30\stm32f0xx_hal_dma.o"
+"q30\stm32f0xx_hal_cortex.o"
+"q30\stm32f0xx_hal_pwr.o"
+"q30\stm32f0xx_hal_pwr_ex.o"
+"q30\stm32f0xx_hal_flash.o"
+"q30\stm32f0xx_hal_flash_ex.o"
+"q30\stm32f0xx_hal_exti.o"
+"q30\system_stm32f0xx.o"
+--strict --scatter "q30\q30.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "q30.map" -o q30\q30.axf
